@@ -1,51 +1,107 @@
-# Uniswap Interface
+# @dex/interface
+Forked from
+[@uniswap/interface v4.25.3](https://github.com/Uniswap/interface/tree/642a4177d8f589bbd5e0eeec3780222b59db9c30)
 
-[![Unit Tests](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/unit-tests.yaml)
-[![Integration Tests](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/integration-tests.yaml)
-[![Lint](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/lint.yml)
-[![Release](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml)
-[![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
+## Deployed smart contracts
+### Polygon mainnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://polygonscan.com/address/0x711136f1e0339aad6232414c424784bb389d4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://polygonscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://polygonscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://polygonscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
+### Polygon Mumbai testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://mumbai.polygonscan.com/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://mumbai.polygonscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://mumbai.polygonscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://mumbai.polygonscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-- Website: [uniswap.org](https://uniswap.org/)
-- Interface: [app.uniswap.org](https://app.uniswap.org)
-- Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
-- Twitter: [@Uniswap](https://twitter.com/Uniswap)
-- Reddit: [/r/Uniswap](https://www.reddit.com/r/Uniswap/)
-- Email: [contact@uniswap.org](mailto:contact@uniswap.org)
-- Discord: [Uniswap](https://discord.gg/FCfyBSbCU5)
-- Whitepapers:
-  - [V1](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)
-  - [V2](https://uniswap.org/whitepaper.pdf)
-  - [V3](https://uniswap.org/whitepaper-v3.pdf)
+### Ethereum Ropsten testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://ropsten.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://ropsten.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://ropsten.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://ropsten.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-## Accessing the Uniswap Interface
+### Ethereum Rinkeby testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://rinkeby.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://rinkeby.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://rinkeby.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://rinkeby.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-To access the Uniswap Interface, use an IPFS gateway link from the
-[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
-or visit [app.uniswap.org](https://app.uniswap.org).
+### Ethereum Goerli testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://goerli.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://goerli.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://goerli.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://goerli.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-## Unsupported tokens
+### Ethereum Kovan testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://kovan.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://kovan.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://kovan.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://kovan.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-Check out `useUnsupportedTokenList()` in [src/state/lists/hooks.ts](./src/state/lists/hooks.ts) for blocking tokens in your instance of the interface.
+### BSC testnet
+  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://testnet.bscscan.com/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
+  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://testnet.bscscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
+  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://testnet.bscscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
+  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://testnet.bscscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
 
-You can block an entire list of tokens by passing in a tokenlist like [here](./src/constants/lists.ts) or you can block specific tokens by adding them to [unsupported.tokenlist.json](./src/constants/tokenLists/unsupported.tokenlist.json).
+## Install & Compile
+```bash
+yarn install
+yarn workspace @dex/lib run compile
+yarn workspace @dex/v2-core run compile
+yarn workspace @dex/governance run compile
+yarn workspace @dex/v2-periphery run compile
+yarn workspace @dex/v2-sdk run build
+yarn workspace @dex/default-token-list run build
+yarn run start
+```
 
-## Contributions
+## Deploy
+```bash
+# 0. make .env
 
-For steps on local deployment, development, and code contribution, please see [CONTRIBUTING](./CONTRIBUTING.md).
+# 1. UniswapV2Factory
+#  - dex-monorepo/packages/v2-core/contracts/UniswapV2Factory.sol
+yarn workspace @dex/v2-core run deploy
 
-## Accessing Uniswap V2
+# 2. UniswapV2Router02
+#  - dex-monorepo/packages/v2-periphery/contracts/UniswapV2Router02.sol
+# Depends UniswapV2Factory address, WETH address
+yarn workspace @dex/v2-periphery run deploy
+yarn workspace @dex/v2-periphery waffle flatten
 
-The Uniswap Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for Uniswap protocol V2.
+# 3. FeeTo, FeeToSetter
+#  - dex-monorepo/packages/governance/contracts/FeeTo.sol
+#  - dex-monorepo/packages/governance/contracts/FeeToSetter.sol
+yarn workspace @dex/governance run deploy
+yarn workspace @dex/governance waffle flatten
 
-- Swap on Uniswap V2: https://app.uniswap.org/#/swap?use=v2
-- View V2 liquidity: https://app.uniswap.org/#/pool/v2
-- Add V2 liquidity: https://app.uniswap.org/#/add/v2
-- Migrate V2 liquidity to V3: https://app.uniswap.org/#/migrate/v2
+# 4. setFeeToSetter on UniswapV2Factory
 
-## Accessing Uniswap V1
+# 5. toggleFees true on FeeToSetter
+```
 
-The Uniswap V1 interface for mainnet and testnets is accessible via IPFS gateways
-linked from the [v1.0.0 release](https://github.com/Uniswap/uniswap-interface/releases/tag/v1.0.0).
+```
+FACTORY_ADDRESS
+```
+
+## Transfer Ownership
+```bash
+# 1. setOwner on FeeTo
+# 2. setOwner on FeeToSetter
+```
+
+Fix
+```
+yarn cache clean
+#npx eslint --fix local/path/to/component.tsx
+```
+
+https://abi.hashex.org/
+
+## RPC URL
+```
+https://polygon-rpc.com/
+https://matic-mumbai.chainstacklabs.com/
+```
