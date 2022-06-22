@@ -2,6 +2,11 @@
 Forked from
 [@uniswap/interface v4.25.3](https://github.com/Uniswap/interface/tree/642a4177d8f589bbd5e0eeec3780222b59db9c30)
 
+    "@dex/governance": "^1.0.2",
+    "@dex/v2-core": "1.0.0",
+    "@dex/v2-periphery": "^1.1.0-beta.0",
+    "@dex/v2-sdk": "^3.0.0-alpha.2",
+
 ## Deployed smart contracts
 ### Polygon mainnet
   - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://polygonscan.com/address/0x711136f1e0339aad6232414c424784bb389d4f6d);
