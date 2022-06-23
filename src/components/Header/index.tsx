@@ -284,21 +284,21 @@ export default function Header() {
             Boolean(match) ||
             pathname.startsWith('/add') ||
             pathname.startsWith('/remove') ||
-            pathname.startsWith('/increase') ||
+            //pathname.startsWith('/increase') ||
             pathname.startsWith('/find')
           }
         >
           <Trans>Pool</Trans>
         </StyledNavLink>
-        {(!chainId || chainId === SupportedChainId.MAINNET) && (
+        {/*(!chainId || chainId === SupportedChainId.MAINNET) && (
           <StyledNavLink id={`vote-nav-link`} to={'/vote'}>
             <Trans>Vote</Trans>
           </StyledNavLink>
-        )}
-        <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
+        )*/}
+        {/*<StyledExternalLink id={`charts-nav-link`} href={infoLink}>
           <Trans>Charts</Trans>
           <sup>↗</sup>
-        </StyledExternalLink>
+        </StyledExternalLink>*/}
       </HeaderLinks>
 
       <HeaderControls>

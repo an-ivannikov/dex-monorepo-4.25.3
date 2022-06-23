@@ -269,7 +269,7 @@ export default function Pool() {
                 <RowFixed>
                   <ButtonOutlined
                     as={Link}
-                    to="/pool/v2"
+                    to="/pool"
                     id="import-pool-link"
                     style={{
                       padding: '8px 16px',
