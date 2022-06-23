@@ -3,12 +3,12 @@ import { Trans } from '@lingui/macro'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import JSBI from 'jsbi'
 import { useContext, useMemo } from 'react'
-import { ChevronsRight } from 'react-feather'
+//import { ChevronsRight } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { Text } from 'rebass'
 import styled, { ThemeContext } from 'styled-components/macro'
 
-import { ButtonOutlined, ButtonPrimary, ButtonSecondary } from '../../components/Button'
+import { /*ButtonOutlined,*/ ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import Card from '../../components/Card'
 import { AutoColumn } from '../../components/Column'
 import { CardBGImage, CardNoise, CardSection, DataCard } from '../../components/earn/styled'
@@ -223,7 +223,7 @@ export default function Pool() {
                 </EmptyProposals>
               ) : allV2PairsWithLiquidity?.length > 0 || stakingPairs?.length > 0 ? (
                 <>
-                  <ButtonSecondary>
+                  {/*<ButtonSecondary>
                     <RowBetween>
                       <Trans>
                         <ExternalLink href={'https://v2.info.uniswap.org/account/' + account}>
@@ -232,7 +232,7 @@ export default function Pool() {
                         <span> ↗ </span>
                       </Trans>
                     </RowBetween>
-                  </ButtonSecondary>
+                  </ButtonSecondary>*/}
                   {v2PairsWithoutStakedAmount.map((v2Pair) => (
                     <FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />
                   ))}
@@ -247,9 +247,9 @@ export default function Pool() {
                       )
                   )}
                   <RowFixed justify="center" style={{ width: '100%' }}>
-                    <ButtonOutlined
+                    {/*<ButtonOutlined
                       as={Link}
-                      to="/migrate/v2"
+                      to="/migrate"
                       id="import-pool-link"
                       style={{
                         padding: '8px 16px',
@@ -261,7 +261,7 @@ export default function Pool() {
                     >
                       <ChevronsRight size={16} style={{ marginRight: '8px' }} />
                       <Trans>Migrate Liquidity to V3</Trans>
-                    </ButtonOutlined>
+                    </ButtonOutlined>*/}
                   </RowFixed>
                 </>
               ) : (
