@@ -1,5 +1,5 @@
-import { Trans } from '@lingui/macro'
 import { Pair } from '@dex/v2-sdk'
+import { Trans } from '@lingui/macro'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import JSBI from 'jsbi'
 import { useContext, useMemo } from 'react'

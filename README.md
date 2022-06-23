@@ -100,7 +100,7 @@ FACTORY_ADDRESS
 Fix
 ```
 yarn cache clean
-#npx eslint --fix local/path/to/component.tsx
+npx eslint --fix local/path/to/component.tsx
 ```
 
 https://abi.hashex.org/

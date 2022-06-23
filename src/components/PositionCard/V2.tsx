@@ -1,6 +1,6 @@
+import { Pair } from '@dex/v2-sdk'
 import { Trans } from '@lingui/macro'
 import { CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
-import { Pair } from '@dex/v2-sdk'
 import JSBI from 'jsbi'
 import { transparentize } from 'polished'
 import { useState } from 'react'

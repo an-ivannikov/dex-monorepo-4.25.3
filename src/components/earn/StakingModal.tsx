@@ -1,7 +1,7 @@
+import { Pair } from '@dex/v2-sdk'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
 import { CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { Pair } from '@dex/v2-sdk'
 import { useCallback, useState } from 'react'
 import styled from 'styled-components/macro'
 

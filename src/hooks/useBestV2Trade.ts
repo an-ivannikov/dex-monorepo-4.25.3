@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
 import { Pair, Trade } from '@dex/v2-sdk'
+import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
 import { useMemo } from 'react'
 import { isTradeBetter } from 'utils/isTradeBetter'
 
