@@ -1,12 +1,19 @@
 {
   "name": "@dex/v2-core",
-  "description": "Core contracts for the UniswapV2 protocol",
-  "version": "1.0.0",
+  "description": "🎛 Core contracts for the UniswapV2 protocol",
+  "version": "1.0.1",
   "homepage": "https://uniswap.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/Uniswap/uniswap-v2-core"
   },
+  "keywords": [
+    "uniswap",
+    "ethereum",
+    "v2",
+    "core",
+    "uniswap-v2"
+  ],
   "files": [
     "contracts",
     "build"
@@ -18,8 +25,10 @@
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
+    "dotenv": "^16.0.1",
     "ethereum-waffle": "^2.4.1",
     "ethereumjs-util": "^6.2.0",
+    "ethers": "^5.0.0",
     "mocha": "^6.2.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
@@ -35,7 +44,9 @@
     "compile": "waffle .waffle.json",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "predeploy": "yarn compile",
+    "deploy": "node ./scripts/deploy.js"
   },
   "license": "GPL-3.0-or-later"
 }
