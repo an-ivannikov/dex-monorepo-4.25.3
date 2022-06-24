@@ -50,6 +50,9 @@ Forked from
 yarn install
 yarn workspace @dex/lib run compile
 yarn workspace @dex/v2-core run compile
+cd ./packages/v2-core
+node ./scripts/get-init-code-hash.js
+cd ../../
 yarn workspace @dex/governance run compile
 yarn workspace @dex/v2-periphery run compile
 yarn workspace @dex/v2-sdk run build

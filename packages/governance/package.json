@@ -1,7 +1,7 @@
 {
   "name": "@dex/governance",
   "version": "1.0.2",
-  "description": "🏛 Governance contracts for the Uniswap protocol",
+  "description": "🏛 Governance contracts for the DEX protocol",
   "author": "Noah Zinsmeister",
   "license": "MIT",
   "files": [

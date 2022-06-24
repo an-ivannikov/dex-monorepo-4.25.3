@@ -1,7 +1,7 @@
 {
   "name": "@dex/default-token-list",
   "version": "3.2.0",
-  "description": "◦ The Uniswap default token list",
+  "description": "◦ The DEX default token list",
   "main": "build/dex-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
