@@ -10,7 +10,7 @@ const {
 } = process.env;
 
 
-const overrides = { gasPrice: 2000000000 };
+const overrides = { gasPrice: 75000000000 };
 
 async function main() {
   const provider = new providers.JsonRpcProvider(PROVIDER_RPC_URL);
@@ -25,7 +25,7 @@ async function main() {
   await contractFeeTo.deployTransaction.wait();
 
   const factoryFeeToSetter = new ContractFactory(FeeToSetter.abi, FeeToSetter.bytecode, wallet);
-  const UniswapV2Factory = '0x711136f1E0339aad6232414C424784BB389D4f6d'; // @TODO
+  const UniswapV2Factory = '0x2818030e36aFef79a2203069B3f4388Af2Ce012b'; // @TODO
   const vestingEnd = parseInt(Date.now()/1000 + 300);
   console.log('vestingEnd:', vestingEnd); // ?
   const argsFeeToSetter = [UniswapV2Factory, vestingEnd, owner, contractFeeTo.address];

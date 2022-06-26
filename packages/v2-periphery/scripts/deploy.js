@@ -10,7 +10,7 @@ const {
 
 
 
-const overrides = { gasPrice: 2000000000 };
+const overrides = { gasPrice: 75000000000 };
 
 async function main() {
   const provider = new providers.JsonRpcProvider(PROVIDER_RPC_URL);
@@ -30,8 +30,8 @@ async function main() {
   // 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c mainnet
   // 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd testnet
 
-  const WETH = '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'; // @TODO
-  const UniswapV2Factory = '0x711136f1E0339aad6232414C424784BB389D4f6d'; // @TODO
+  const WETH = '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270'; // @TODO
+  const UniswapV2Factory = '0x2818030e36aFef79a2203069B3f4388Af2Ce012b'; // @TODO
   const args = [UniswapV2Factory, WETH];
   const contract = await factory.deploy(...args, overrides);
   console.log('UniswapV2Router02 address:',contract.address);

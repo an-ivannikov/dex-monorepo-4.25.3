@@ -4,46 +4,46 @@ Forked from
 
 ## Deployed smart contracts
 ### Polygon mainnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://polygonscan.com/address/0x711136f1e0339aad6232414c424784bb389d4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://polygonscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://polygonscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://polygonscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://polygonscan.com/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://polygonscan.com/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://polygonscan.com/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://polygonscan.com/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### Polygon Mumbai testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://mumbai.polygonscan.com/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://mumbai.polygonscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://mumbai.polygonscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://mumbai.polygonscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://mumbai.polygonscan.com/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://mumbai.polygonscan.com/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://mumbai.polygonscan.com/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://mumbai.polygonscan.com/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### Ethereum Ropsten testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://ropsten.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://ropsten.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://ropsten.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://ropsten.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://ropsten.etherscan.io/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://ropsten.etherscan.io/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://ropsten.etherscan.io/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://ropsten.etherscan.io/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### Ethereum Rinkeby testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://rinkeby.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://rinkeby.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://rinkeby.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://rinkeby.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://rinkeby.etherscan.io/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://rinkeby.etherscan.io/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://rinkeby.etherscan.io/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://rinkeby.etherscan.io/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### Ethereum Goerli testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://goerli.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://goerli.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://goerli.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://goerli.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://goerli.etherscan.io/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://goerli.etherscan.io/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://goerli.etherscan.io/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://goerli.etherscan.io/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### Ethereum Kovan testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://kovan.etherscan.io/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://kovan.etherscan.io/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://kovan.etherscan.io/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://kovan.etherscan.io/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://kovan.etherscan.io/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://kovan.etherscan.io/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://kovan.etherscan.io/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://kovan.etherscan.io/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ### BSC testnet
-  - UniswapV2Factory [0x711136f1E0339aad6232414C424784BB389D4f6d](https://testnet.bscscan.com/address/0x711136f1E0339aad6232414C424784BB389D4f6d);
-  - UniswapV2Router02 [0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b](https://testnet.bscscan.com/address/0x8EA8642D5bdD036cC4c5E4428E0626Bc12D71C7b);
-  - FeeTo [0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9](https://testnet.bscscan.com/address/0xBeE2BD90C2a9E8Ed8D5E75fE063bB2cDf6E88aA9);
-  - FeeToSetter [0xe2447325877d38E087190A583F1E96A5C4bb98Fe](https://testnet.bscscan.com/address/0xe2447325877d38E087190A583F1E96A5C4bb98Fe).
+  - UniswapV2Factory [0x2818030e36aFef79a2203069B3f4388Af2Ce012b](https://testnet.bscscan.com/address/0x2818030e36aFef79a2203069B3f4388Af2Ce012b);
+  - UniswapV2Router02 [0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79](https://testnet.bscscan.com/address/0x0Aea21827CEDbf88F76C70E1f45A6A03D6590c79);
+  - FeeTo [0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97](https://testnet.bscscan.com/address/0x7f445fDc0f653ee55Ef9Ab6e03FdD81da0058A97);
+  - FeeToSetter [0x5C719C600EF143eBD2a96d58BAea5d3A36136B31](https://testnet.bscscan.com/address/0x5C719C600EF143eBD2a96d58BAea5d3A36136B31).
 
 ## Install & Compile
 ```bash
@@ -107,4 +107,6 @@ https://abi.hashex.org/
 ```
 https://polygon-rpc.com/
 https://matic-mumbai.chainstacklabs.com/
+
+https://data-seed-prebsc-1-s1.binance.org:8545/
 ```

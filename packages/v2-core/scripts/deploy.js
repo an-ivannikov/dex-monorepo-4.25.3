@@ -9,7 +9,7 @@ const {
 } = process.env;
 
 
-const overrides = { gasPrice: 2000000000 };
+const overrides = { gasPrice: 75000000000 };
 
 async function main() {
   const provider = new providers.JsonRpcProvider(PROVIDER_RPC_URL);
