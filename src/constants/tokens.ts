@@ -1,4 +1,5 @@
-import { Ether, Token, WETH9 } from '@uniswap/sdk-core'
+import { Currency, Ether, NativeCurrency, Token, WETH9 } from '@uniswap/sdk-core'
+import invariant from 'tiny-invariant'
 
 import { UNI_ADDRESS } from './addresses'
 import { SupportedChainId } from './chains'
@@ -211,15 +212,66 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ),
 }
 
+export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = WETH9_EXTENDED;
+
+function isMatic(chainId: number): chainId is SupportedChainId.POLYGON | SupportedChainId.POLYGON_MUMBAI {
+  return chainId === SupportedChainId.POLYGON_MUMBAI || chainId === SupportedChainId.POLYGON
+}
+
+class MaticNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isMatic(this.chainId)) throw new Error('Not matic')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isMatic(chainId)) throw new Error('Not matic')
+    super(chainId, 18, 'MATIC', 'Polygon Matic')
+  }
+}
+
 export class ExtendedEther extends Ether {
   public get wrapped(): Token {
-    if (this.chainId in WETH9_EXTENDED) return WETH9_EXTENDED[this.chainId]
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    if (wrapped) return wrapped
     throw new Error('Unsupported chain ID')
   }
 
-  private static _cachedEther: { [chainId: number]: ExtendedEther } = {}
+  private static _cachedExtendedEther: { [chainId: number]: NativeCurrency } = {}
 
   public static onChain(chainId: number): ExtendedEther {
-    return this._cachedEther[chainId] ?? (this._cachedEther[chainId] = new ExtendedEther(chainId))
+    return this._cachedExtendedEther[chainId] ?? (this._cachedExtendedEther[chainId] = new ExtendedEther(chainId))
   }
+}
+
+const cachedNativeCurrency: { [chainId: number]: NativeCurrency } = {}
+export function nativeOnChain(chainId: number): NativeCurrency {
+  return (
+    cachedNativeCurrency[chainId] ??
+    (cachedNativeCurrency[chainId] = isMatic(chainId)
+      ? new MaticNativeCurrency(chainId)
+      : ExtendedEther.onChain(chainId))
+  )
+}
+
+export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedChainId]?: string } } = {
+  USDC: {
+    [SupportedChainId.MAINNET]: USDC.address,
+    [SupportedChainId.ARBITRUM_ONE]: USDC_ARBITRUM.address,
+    [SupportedChainId.OPTIMISM]: USDC_OPTIMISM.address,
+    /*[SupportedChainId.ARBITRUM_RINKEBY]: USDC_ARBITRUM_RINKEBY.address,
+    [SupportedChainId.OPTIMISTIC_KOVAN]: USDC_OPTIMISTIC_KOVAN.address,
+    [SupportedChainId.POLYGON]: USDC_POLYGON.address,
+    [SupportedChainId.POLYGON_MUMBAI]: USDC_POLYGON_MUMBAI.address,
+    [SupportedChainId.GOERLI]: USDC_GOERLI.address,
+    [SupportedChainId.RINKEBY]: USDC_RINKEBY.address,
+    [SupportedChainId.KOVAN]: USDC_KOVAN.address,
+    [SupportedChainId.ROPSTEN]: USDC_ROPSTEN.address,*/
+  },
 }
